@@ -1,0 +1,163 @@
+.experiencia_fundo{
+    background: #292929;
+}
+.experiencia {
+    max-width: 1100px;
+    margin: auto;
+}
+.experiencia_titulo{
+    margin: 0px auto;
+    padding: 40px 0px;
+    font-size: 9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    color: #000;
+    z-index: 1;
+}
+.experiencia_titulo::after{
+    position: absolute;
+    content: "";
+    background: #000;
+    width: 90%;
+    max-width: 1100px;
+    height: 1px;
+    z-index: 2;
+    bottom: 60px;
+}
+.experiencia_projetos{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-bottom: 60px;
+}
+.experiencia_projetos_e{
+    width: 260px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    border-radius: 8px 8px 8px 8px;
+    padding-bottom: 4px;
+    background: #141414;
+}
+.experiencia_projetos_e_img{
+    width: 260px;
+    border-radius: 8px 8px 0px 0px;
+}
+.experiencia_projetos_e_conteudo{
+    color: #FFF;
+    background: #141414;
+    line-height: 1.25;
+    padding: 10px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -5px;
+    position: relative;
+}
+.experiencia_projetos_e_conteudo::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 15px;
+    z-index: 2;
+    background: linear-gradient(180deg, #3C93F6 0%, #2B72D4 100%);
+    left: 12px;
+
+}
+.experiencia_projetos_e_conteudo::after{
+    position: absolute;
+    content: "";
+    width: 220px;
+    background: #292929;
+    z-index: 2;
+    height: 1px;
+    bottom: 3px;
+}
+.experiencia_projetos_e_habilidades{
+    background: #141414;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 15px;
+    justify-content: start ;
+    
+}
+.experiencia_projetos_e_habilidade{
+    color:#FFF;
+    font-weight: bold;
+    background: #292929;
+    padding: 6px;
+    border-radius: 5px 5px 5px 5px;
+    display: inline;
+    margin: 5px;
+}
+@media(max-width:941px){
+    .experiencia_titulo{
+        font-size: 8rem;
+    }
+    .experiencia_projetos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        
+    }
+}
+@media(max-width:821px){
+    .experiencia_titulo{
+        font-size: 7rem;
+    }
+    .experiencia_projetos_e_conteudo::after{
+        width: 160px;
+    }
+}
+@media(max-width:681px){
+    .experiencia_titulo{
+        font-size: 6rem;
+    }
+    .experiencia_projetos_e_img{
+        width: 200px;
+    }
+    .experiencia_projetos_e{
+        width: 200px;
+    }
+}
+
+@media(max-width:581px){
+    .experiencia_titulo{
+        font-size: 5rem;
+    }
+    .experiencia_projetos_e_img{
+        width: 280px;
+    }
+    .experiencia_projetos_e{
+        width: 280px;
+    }
+    .experiencia_titulo::after{
+        bottom: 50px;
+    }
+    .experiencia_projetos_e_conteudo::after{
+        width: 240px;
+    }
+}
+@media(max-width:461px){
+    .experiencia_titulo{
+        font-size: 3.5rem;
+    }
+    .experiencia_titulo::after{
+        bottom: 45px;
+    }
+    .experiencia_projetos_e_img{
+        width: 180px;
+    }
+    .experiencia_projetos_e{
+        width: 180px;
+    }
+    .experiencia_projetos_e_conteudo::after{
+        width: 140px;
+    }
+}

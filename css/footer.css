@@ -1,0 +1,94 @@
+.footer_fundo{
+    background: #000;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #000;
+    max-width: 1100px;
+    margin: auto;
+    background: #000;
+}
+.footer p {
+    color: #CCC;
+    font-size: 2rem;
+    padding: 60px 0px;
+    padding-right: 10px;
+}
+.footer_p{
+    grid-column: 1;
+    color: #CCC;
+    position: relative;
+    padding-left: 40px;
+}
+.footer_p::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    background: url(./Decoração.svg) no-repeat center;
+    top: -45px;
+}
+.footer_p p span{
+    font-size: 2rem;
+    color: #2B72D4;
+}
+.footer_p span{
+    color: #7A7A7A;
+}
+.footer_contato{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    grid-column: 2;
+    color: #fff;
+    padding: 60px 20px;
+}
+.footer_direitos_responsivo{
+    display: none;
+}
+@media(max-width:891px){
+    .footer{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+    }
+    .footer_contato{
+        padding-top: 0px;
+    }
+    .footer_direitos_responsivo{
+        display: block;
+        color: #7A7A7A;
+        text-align: center;
+    }
+    .footer_direitos{
+        display: none;
+    }
+    .footer_p{
+        text-align: center;
+        padding-left: 0px;
+        padding: 0px 10px;
+    }
+    .footer_contato{
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+@media (max-width:481px){
+    .footer_contato h1{
+        font-size: 1.5rem;
+    }
+    .footer_p p {
+        font-size: 1.5rem;
+        padding: 60px 0px;
+        text-align: center;
+    }
+}
+@media (max-width: 371px){
+    .footer_contato h1{
+        font-size: 1.2rem;
+    }
+}
