@@ -65,7 +65,9 @@ main a:hover{
 }
 .pergunta{
     color: #141414;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 .resposta{
     background: #F5F5F5;
